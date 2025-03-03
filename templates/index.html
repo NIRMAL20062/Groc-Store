@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Comparison</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Price Comparison Tool</h1>
+        <input type="text" id="product" placeholder="Enter product name">
+        <button onclick="search()">Search</button>
+        <div id="results">
+            <h2>Current Prices</h2>
+            <p id="amazon-price"></p>
+            <p id="ebay-price"></p>
+        </div>
+        <canvas id="priceChart" width="400" height="200"></canvas>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
